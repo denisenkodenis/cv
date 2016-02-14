@@ -1,0 +1,183 @@
+body {
+ background: url(../images/bg.jpeg) repeat-y;
+ -moz-background-size: 100%; /* Firefox 3.6+ */
+ -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+ -o-background-size: 100%; /* Opera 9.6+ */
+ background-size: 100%; /* Современные браузеры */
+ font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+ font-size: 12pt;
+}
+
+.block{
+	 min-width: 850px;
+   overflow: auto;
+	 margin: 0 200px 0 200px;
+	 text-align: justify;
+}
+
+.border{
+	border: 3px solid #ea5d2e;
+	text-indent: 20px;
+}
+
+.indent{
+  padding: 20px;
+}
+
+.indent_hor{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.indent_mini{
+  padding: 10px;
+}
+
+.header{
+		 background: linear-gradient(to bottom, #7a7778, #f2f2f2 70px);
+		 border-top-left-radius: 12px;
+		 border-top-right-radius: 12px;
+}
+
+.background{
+   background-color: #f2f2f2;
+}
+
+.footer{
+	background: linear-gradient(to bottom, #f2f2f2, #7a7778);
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.block_distance{
+	 padding: 4px;
+}
+
+.fixed_table{
+	display: table;
+	line-height: 10px;
+	table-layout: fixed;
+  width: 100%;
+}
+
+#contacts_table table{
+	table-layout: fixed;
+  width: 100%;
+}
+
+#contacts_table td, th {
+  width: 5%;
+}
+
+a {
+ text-decoration: none;
+}
+
+.ui-tabs-vertical .ui-tabs-nav {
+	float: left;
+	margin: 10px 0 0 -40px;
+	width: 161px;
+}
+
+.ui-tabs-vertical ul {
+   list-style: none;
+   text-align: center;
+}
+
+.ui-tabs-vertical  ul li {
+	border-top: 1px #006699;
+	border-right: 3px solid #ea5d2e;
+	border-bottom: 1px  #006699;
+	border-left: 10px solid #006699;
+	background-color: #c1bbaa;
+	margin: 3px 0;
+}
+
+.ui-tabs-vertical  ul li a,
+.ui-tabs-vertical  ul li a:visited {
+	color: #000;
+	display: block;
+	padding: 8px 3px;
+	font-weight: bold;
+}
+
+.footer a,
+.footer a:visited{
+  color : #006699;
+}
+
+.ui-tabs-vertical ul li:hover{
+   border-left: 10px solid #ea5d2e;
+}
+
+.ui-tabs-vertical ul li a:hover {
+	 background-color: #f2f2f2;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+	border-right: none;
+	background-color: #f2f2f2;
+	border-left: 10px solid #ea5d2e;
+	border-top: 2px solid #ea5d2e;
+	border-bottom: 2px solid #ea5d2e;
+}
+
+.ui-tabs-vertical .ui-tabs-panel {
+	min-height: 140px;
+	margin: 0 0 0 158px;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border: 3px solid #ea5d2e;
+}
+
+.ui-tooltip-content {
+    font-size:10pt;
+}
+
+.ui-tooltip {
+	color: #006699;
+}
+
+#contacts {
+	position: relative;
+	margin: 0 20px 0 20px;
+	height: 40px;
+	background-color: #fff;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: 3px solid #006699;
+}
+
+#birthday{
+	margin-left: 5em;
+	font-size: 10pt;
+}
+
+.job{
+	margin-left: 10px;
+	font-weight: bold;
+  width: 130px;
+  float: left;
+}
+
+.job_value{
+	margin-left: 140px;
+}
+
+#Name{
+	width: 25%;
+}
+
+.right_text_align{
+	text-align: right;
+}
+
+.info li{
+    margin-left: 30px;
+}
+
+.list {
+  color: #006699;
+}

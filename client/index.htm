@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="jqueryui/jquery-ui.css" rel="stylesheet">
+	<link href="css/cv.css" rel="stylesheet">
+	<script src="js/properties.js"></script>
+</head>
+<body>
+	<div class="block border indent header">
+
+		<table class="fixed_table">
+			<tr>
+				<td id="Name"></td>
+				<td width="50"> <a href="#show_contacts" title="Контакты"> <img src="images/ContactsOn.png" width="48" height="48"> </a> </td>
+				<td><div id="contacts"> <table><tr><td id="Mail"></td><td id="Skype"></td><td id="Phone"></td></tr> </table> </div></td>
+				<td width="50" class="right_text_align"> <a href='http://80.87.194.121:8080/cv/pdf' target="_blank"> <img src="images/pdf.png" width="48" height="48"> </a> </td>
+			</tr>
+		</table>
+
+		<div id="birthday"></div>
+
+	</div>
+
+	<div class="block_distance"></div>
+
+	<div class="block border indent_hor background" id="summary"></div>
+
+	<div class="block_distance"></div>
+
+	<div class="block">
+		<div id="tab-container">
+		  <ul>
+		    <li><a href="#skillset"></a></li>
+		    <li><a href="#experience"></a></li>
+		    <li><a href="#education"></a></li>
+		    <li><a href="#code"></a></li>
+		  </ul>
+		  <div id="skillset"></div>
+		  <div id="experience"></div>
+		  <div id="education"></div>
+		  <div id="code"></div>
+		</div>
+	</div>
+
+	<div class="block_distance"></div>
+
+	<div class="block border indent_mini footer">
+		<table class="fixed_table">
+			<tr>
+				<td width="80%">Designed by Denisenko Denis @ 2016 &nbsp&nbsp&nbsp&nbsp&nbsp г.Ростов-на-Дону</td>
+				<td class="right_text_align"><a href="#show_contacts">Контакты</a></td>
+			</tr>
+		</table>
+	</div>
+	
+	<script src="jqueryui/external/jquery/jquery.js"></script>
+	<script src="jqueryui/jquery-ui.js"></script>
+	<script src="js/TabContent.js"></script>
+	<script src="js/cv.js"></script>
+
+</body>
+</html>

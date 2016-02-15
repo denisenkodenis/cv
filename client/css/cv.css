@@ -1,5 +1,5 @@
 body {
- background: url(../images/bg.jpeg) repeat-y;
+ background: url(../images/bg.jpeg) repeat;
  -moz-background-size: 100%; /* Firefox 3.6+ */
  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
  -o-background-size: 100%; /* Opera 9.6+ */
@@ -11,7 +11,7 @@ body {
 .block{
 	 min-width: 850px;
    overflow: auto;
-	 margin: 0 200px 0 200px;
+	 margin: 0 150px 0 150px;
 	 text-align: justify;
 }
 

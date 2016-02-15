@@ -15,15 +15,19 @@ public class PersonalInfo {
     private String mail;
     private String phone;
     private String skype;
+    private String city;
+    private String copyright;
 
-
-    public PersonalInfo(String name, String birthDay, String description, String mail, String phone, String skype) {
+    public PersonalInfo(String name, String birthDay, String description, String mail, String phone, String skype, String city) {
         this.name = name;
         this.birthDay = birthDay;
         this.description = description;
         this.mail = mail;
         this.phone = phone;
         this.skype = skype;
+        this.city = city;
+        this.copyright = copyright;
+
     }
 
     public String getId() {
@@ -81,5 +85,9 @@ public class PersonalInfo {
     public void setSkype(String skype) {
         this.skype = skype;
     }
+
+    public String getCity() { return city; }
+
+    public void setCity(String city) { this.city = city; }
 
 }

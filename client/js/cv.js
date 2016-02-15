@@ -14,6 +14,7 @@ $( document ).ready(function() {
 
         $("#Phone").html("<p><img src='images/phone.jpeg' width='16' height='16'>&nbsp;"
                               + data.phone + "</a>");
+        $("#city").html(data.city + " @ 2016");
       }
    });
 
@@ -34,6 +35,11 @@ $("#contacts").hide();
 $('a[href = "#show_contacts"]').tooltip({
   show: { effect: "slideDown", delay: 250 },
   position: { my: "left top", at: "left bottom"}
+});
+
+$('a[href = "http://denisenkodenis.ru:8080/cv/pdf"]').tooltip({
+  show: { effect: "slideDown", delay: 250 },
+  position: { my: "right top", at: "right bottom"}
 });
 
 $('a[href = "#show_contacts"]').click( function(){

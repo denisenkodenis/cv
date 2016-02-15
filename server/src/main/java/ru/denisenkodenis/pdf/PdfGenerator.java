@@ -34,9 +34,17 @@ public class PdfGenerator {
     private void buildHeader(Document document, DataService dataService) throws Exception {
         PersonalInfo info = dataService.getPersonalInfo();
         document.add(new Paragraph(info.getName(), fontFactory.getBold(17)));
-        Paragraph birthday = new Paragraph(info.getBirthDay(), fontFactory.get(12));
-        birthday.setIndentationLeft(40);
-        document.add(birthday);
+
+        PdfPTable table = new PdfPTable(2);
+        PdfPCell birthday = createCell(info.getBirthDay(), fontFactory.get(12));
+        birthday.setPaddingLeft(10);
+        table.addCell(birthday);
+        PdfPCell city = createCell(info.getCity(), fontFactory.get(12));
+        city.setRightIndent(10);
+        city.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        table.addCell(city);
+
+        document.add(table);
 
         document.add(Chunk.NEWLINE);
         document.add(new LineSeparator());
@@ -58,6 +66,7 @@ public class PdfGenerator {
 
     private void buildSummary(Document document, DataService dataService) throws Exception {
         Paragraph summary = new Paragraph(dataService.getPersonalInfo().getDescription(), fontFactory.get(12));
+        summary.setFirstLineIndent(20);
         summary.setIndentationLeft(50);
         summary.setIndentationRight(50);
         summary.setAlignment(Element.ALIGN_JUSTIFIED);
@@ -118,7 +127,7 @@ public class PdfGenerator {
     }
 
     private void buildEducations(Document document, DataService dataService) throws Exception {
-        Font font = fontFactory.getBold(12);
+        Font font = fontFactory.get(12);
         Font boldFont = fontFactory.getBold(12);
         document.add(new Paragraph(dataService.getHeaders().getEducation(), boldFont));
         document.add(Chunk.NEWLINE);

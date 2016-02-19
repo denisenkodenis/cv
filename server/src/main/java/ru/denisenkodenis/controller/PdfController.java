@@ -13,6 +13,13 @@ public class PdfController {
 
     @RequestMapping("/pdf")
     public ModelAndView pdfView() {
+        Service.setLang("ru");
+        return new ModelAndView("PdfView", "Data", Service);
+    }
+
+    @RequestMapping("/en/pdf")
+    public ModelAndView pdfViewEn() {
+        Service.setLang("en");
         return new ModelAndView("PdfView", "Data", Service);
     }
 

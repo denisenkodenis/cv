@@ -16,9 +16,11 @@
 
     <context:annotation-config />
 
-    <bean id="dataServise" class="ru.denisenkodenis.service.DataService" />
+    <bean id="dataServise" class="ru.denisenkodenis.service.DataService" scope="prototype"/>
 
     <bean id="dataController" class="ru.denisenkodenis.controller.DataController" />
+
+    <bean id="dataControllerEn" class="ru.denisenkodenis.controller.DataControllerEn" />
 
     <bean id="PdfController" class="ru.denisenkodenis.controller.PdfController" />
 

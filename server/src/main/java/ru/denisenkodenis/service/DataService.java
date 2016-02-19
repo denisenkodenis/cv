@@ -23,28 +23,29 @@ public class DataService {
     @Autowired
     private HeadersRepository headersRepository;
 
+    private String lang = "ru";
+
+    public void setLang(String lang){
+        this.lang = lang;
+    }
+
     public PersonalInfo getPersonalInfo(){
-        if (1 != personalInfoRepository.count())
-            return null;
-        return personalInfoRepository.findAll().get(0);
+        return personalInfoRepository.findByLang(lang);
     }
 
     public List<Skill> getSkills() {
-        return skillsRepository.findAll();
+        return skillsRepository.findByLang(lang);
     }
 
     public List<Education> getEducations(){
-        return educationsRepository.findAll();
+        return educationsRepository.findByLang(lang);
     }
 
     public List<Job> getJobs(){
-        return jobsRepository.findAll();
+        return jobsRepository.findByLang(lang);
     }
 
     public Headers getHeaders(){
-        if (1 != headersRepository.count())
-            return null;
-        return headersRepository.findAll().get(0);
-
+        return headersRepository.findByLang(lang);
     }
 }

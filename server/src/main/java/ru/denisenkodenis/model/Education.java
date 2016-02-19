@@ -8,13 +8,15 @@ public class Education {
 
     @Id
     private String id;
+    private String lang;
 
     private String academy;
     private String department;
     private String time;
     private String diploma;
 
-    public Education(String academy, String department, String time, String diploma) {
+    public Education(String lang, String academy, String department, String time, String diploma) {
+        this.lang = lang;
         this.academy = academy;
         this.department = department;
         this.time = time;
@@ -28,6 +30,10 @@ public class Education {
     public void setId(String id) {
         this.id = id;
     }
+
+    public String getLang() { return lang; }
+
+    public void setLang(String lang) { this.lang = lang; }
 
     public String getAcademy() {
         return academy;

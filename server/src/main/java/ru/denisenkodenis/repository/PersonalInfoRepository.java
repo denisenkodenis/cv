@@ -6,5 +6,5 @@ import ru.denisenkodenis.model.PersonalInfo;
 
 @Repository
 public interface PersonalInfoRepository extends MongoRepository<PersonalInfo, String> {
-
+    PersonalInfo findByLang(String lang);
 }

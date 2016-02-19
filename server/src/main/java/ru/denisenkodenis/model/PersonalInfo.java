@@ -8,6 +8,7 @@ public class PersonalInfo {
 
     @Id
     private String id;
+    private String lang;
 
     private String name;
     private String birthDay;
@@ -16,9 +17,10 @@ public class PersonalInfo {
     private String phone;
     private String skype;
     private String city;
-    private String copyright;
 
-    public PersonalInfo(String name, String birthDay, String description, String mail, String phone, String skype, String city) {
+    public PersonalInfo(String lang, String name, String birthDay, String description,
+                        String mail, String phone, String skype, String city) {
+        this.lang = lang;
         this.name = name;
         this.birthDay = birthDay;
         this.description = description;
@@ -26,8 +28,6 @@ public class PersonalInfo {
         this.phone = phone;
         this.skype = skype;
         this.city = city;
-        this.copyright = copyright;
-
     }
 
     public String getId() {
@@ -37,6 +37,10 @@ public class PersonalInfo {
     public void setId(String id) {
         this.id = id;
     }
+
+    public String getLang() { return lang; }
+
+    public void setLang(String lang) { this.lang = lang; }
 
     public String getName() {
         return name;

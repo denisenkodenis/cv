@@ -8,6 +8,7 @@ public class Job {
 
     @Id
     private String id;
+    private String lang;
 
     private String duration;
     private String company;
@@ -17,8 +18,9 @@ public class Job {
     private String technologies;
     private String projectrole;
 
-    public Job(String duration, String company, String position, String projects,
+    public Job(String lang, String duration, String company, String position, String projects,
                String description, String technologies, String projectrole) {
+        this.lang = lang;
         this.duration = duration;
         this.company = company;
         this.position = position;
@@ -33,6 +35,10 @@ public class Job {
     public void setId(String id) {
         this.id = id;
     }
+
+    public String getLang() { return lang; }
+
+    public void setLang(String lang) { this.lang = lang; }
 
     public String getDuration() {
         return duration;

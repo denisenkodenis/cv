@@ -7,10 +7,7 @@ import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.draw.LineSeparator;
 
-import ru.denisenkodenis.model.Education;
-import ru.denisenkodenis.model.Job;
-import ru.denisenkodenis.model.PersonalInfo;
-import ru.denisenkodenis.model.Skill;
+import ru.denisenkodenis.model.*;
 import ru.denisenkodenis.service.DataService;
 import java.awt.*;
 import java.io.IOException;
@@ -106,18 +103,11 @@ public class PdfGenerator {
 
             table.addCell(createCell(job.getDuration(), boldFont));
             table.addCell(createCell("", font));
-            table.addCell(createCell("Место", boldFont));
-            table.addCell(createCell(job.getCompany(), font));
-            table.addCell(createCell("Должность", boldFont));
-            table.addCell(createCell(job.getPosition(), font));
-            table.addCell(createCell("Проекты", boldFont));
-            table.addCell(createCell(job.getProjects(), font));
-            table.addCell(createCell("Описание", boldFont));
-            table.addCell(createCell(job.getDescription(), font));
-            table.addCell(createCell("Языки и техологии", boldFont));
-            table.addCell(createCell(job.getTechnologies(), font));
-            table.addCell(createCell("Роль в проектах", boldFont));
-            table.addCell(createCell(job.getProjectrole(), font));
+
+            for(NamedProperty jobProp: job.getDescriptions()){
+                table.addCell(createCell(jobProp.getName(), boldFont));
+                table.addCell(createCell(jobProp.getDescription(), font));
+            }
 
             document.add(table);
 

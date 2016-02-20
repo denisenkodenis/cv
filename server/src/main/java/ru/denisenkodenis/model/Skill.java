@@ -5,19 +5,13 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Skills")
-public class Skill {
+public class Skill extends NamedProperty{
 
-    @Id
-    private String id;
     private String lang;
 
-    private String name;
-    private String description;
-
-    public Skill(String lang, String name, String description) {
+    public Skill(String lang, String name, String description){
+        super(name, description);
         this.lang = lang;
-        this.name = name;
-        this.description = description;
     }
 
     public String getId() { return id; }

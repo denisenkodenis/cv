@@ -9,12 +9,14 @@
 <body>
 	<div class="block border indent header">
 
-		<table class="fixed_table">
+		<div id="language"><a href="#ru">русский</a> | <a href="#en">english</a></div>
+
+		<table class="fixed_table" id ="header_contacts">
 			<tr>
 				<td id="Name"></td>
-				<td width="50"> <a href="#show_contacts" title="Контакты"> <img src="images/ContactsOn.png" width="48" height="48"> </a> </td>
-				<td><div id="contacts"> <table><tr><td id="Mail"></td><td id="Skype"></td><td id="Phone"></td></tr> </table> </div></td>
-				<td width="50" class="right_text_align"> <a href='http://denisenkodenis.ru:8080/cv/pdf' title="Версия для печати" target="_blank"> <img src="images/pdf.png" width="48" height="48"> </a> </td>
+				<td width="50"><a href="#show_contacts"><img src="images/ContactsOn.png" width="48" height="48"></a></td>
+				<td><div id="contacts"><table><tr><td id="Mail"></td><td id="Skype"></td><td id="Phone"></td></tr></table></div></td>
+				<td width="50" class="right_text_align"><a href="#pdf"><img src="images/pdf.png" width="48" height="48"></a></td>
 			</tr>
 		</table>
 
@@ -45,11 +47,11 @@
 
 	<div class="block_distance"></div>
 
-	<div class="block border indent_mini footer">
+	<div class="block border indent_mini footer" id="footer">
 		<table class="fixed_table">
 			<tr>
 				<td><div id="city"></div></td>
-				<td class="right_text_align"><a href="#show_contacts">Контакты</a></td>
+				<td class="right_text_align"><a href="#show_contacts"></a></td>
 			</tr>
 		</table>
 

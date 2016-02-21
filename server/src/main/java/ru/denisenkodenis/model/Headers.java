@@ -14,13 +14,17 @@ public class Headers {
     private String jobs;
     private String education;
     private String code;
+    private String contacts;
+    private String print;
 
-    public Headers(String lang, String skills, String jobs, String education, String code) {
+    public Headers(String lang, String skills, String jobs, String education, String code, String contacts, String print) {
         this.lang = lang;
         this.skills = skills;
         this.jobs = jobs;
         this.education = education;
         this.code = code;
+        this.contacts = contacts;
+        this.print = print;
     }
 
     public String getId() { return id; }
@@ -46,4 +50,12 @@ public class Headers {
     public String getCode() { return code; }
 
     public void setCode(String code) { this.code = code; }
+
+    public String getContacts() { return contacts; }
+
+    public void setContacts(String contacts) { this.contacts = contacts; }
+
+    public String getPrint() { return print; }
+
+    public void setPrint(String print) { this.print = print; }
 }

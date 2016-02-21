@@ -21,7 +21,10 @@ body {
 }
 
 .indent{
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .indent_hor{
@@ -155,14 +158,34 @@ a {
 	font-size: 10pt;
 }
 
-.job{
+#language{
+	margin-right: 2em;
+	font-size: 10pt;
+  float: right;
+}
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+   color: black;
+}
+
+.activeLink {
+  color: #006699;
+}
+
+.activeLink:hover {
+    text-decoration: underline;
+}
+
+.content_header{
 	margin-left: 10px;
 	font-weight: bold;
   width: 130px;
   float: left;
 }
 
-.job_value{
+.content_value{
 	margin-left: 140px;
 }
 

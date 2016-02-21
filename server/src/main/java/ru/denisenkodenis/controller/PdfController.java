@@ -11,7 +11,7 @@ public class PdfController {
     @Autowired
     private DataService Service;
 
-    @RequestMapping("/pdf")
+    @RequestMapping("/ru/pdf")
     public ModelAndView pdfView() {
         Service.setLang("ru");
         return new ModelAndView("PdfView", "Data", Service);

@@ -1,0 +1,18 @@
+{"lang" : "ru", "name" : "C++", "description" : "Опыт активного использования более 7 лет. Win32 API, .NET (C++ CLI), boost, STL, WTL, ATL, COM"}
+{"lang" : "ru", "name" : ".NET", "description" : "Периодическое использование на протяжении последних 5 лет. C#, C++ CLI, WinForms, .NET Remoting, LINQ"}
+{"lang" : "ru", "name" : "Java", "description" : "Активное изучение. Spring, Maven, JPA, Hibernate, JUnit, Threading, Collections, Concurrency"}
+{"lang" : "ru", "name" : "Javascript", "description" : "Активное изучение. JQuery, Angular JS"}
+{"lang" : "ru", "name" : "DataBase", "description" : "MongoDB (Spring Data JPA), Firebird (C++), SQLite(C++)" }
+{"lang" : "ru", "name" : "Web", "description" : "Javascript, DOM, Ajax, JSON, XML, HTML, CSS, PHP, GWT, JSP"}
+{"lang" : "ru", "name" : "OS/Servers", "description" : "Windows, Linux-based(Ubuntu), Tomcat, Apache, Windows Server" }
+{"lang" : "ru", "name" : "IDE", "description" : "MS Visual Studio, IntelliJ IDEA"}
+{"lang" : "ru", "name" : "Other", "description" : "OOP, TDD, Agile, SCRUM, SVN, Git, Jira, English"}
+{"lang" : "en", "name" : "C++", "description" : "Experience in active use for over 7 years. Win32 API, .NET (C++ CLI), boost, STL, WTL, ATL, COM"}
+{"lang" : "en", "name" : ".NET", "description" : "Intermittent use for the past 5 years. C#, C++ CLI, WinForms, .NET Remoting, LINQ"}
+{"lang" : "en", "name" : "Java", "description" : "Active learning. Spring, Maven, JPA, Hibernate, JUnit, Threading, Collections, Concurrency"}
+{"lang" : "en", "name" : "Javascript", "description" : "Active learning. JQuery, Angular JS"}
+{"lang" : "en", "name" : "DataBase", "description" : "MongoDB (Spring Data JPA), Firebird (C++), SQLite(C++)"}
+{"lang" : "en", "name" : "Web", "description" : "Javascript, DOM, Ajax, JSON, XML, HTML, CSS, PHP, GWT, JSP"}
+{"lang" : "en", "name" : "OS/Servers", "description" : "Windows, Linux-based(Ubuntu), Tomcat, Apache, Windows Server"}
+{"lang" : "en", "name" : "IDE", "description" : "MS Visual Studio, IntelliJ IDEA"}
+{"lang" : "en", "name" : "Other", "description" : "OOP, TDD, Agile, SCRUM, SVN, Git, Jira, English"}

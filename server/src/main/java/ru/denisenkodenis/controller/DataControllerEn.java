@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 @RequestMapping("/en")
 public class DataControllerEn extends DataControllerImpl{
     @PostConstruct
-    void onPostConstract(){
+    void onPostConstruct(){
         Service.setLang("en");
     }
 }

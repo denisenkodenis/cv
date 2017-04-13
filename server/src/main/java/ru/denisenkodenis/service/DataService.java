@@ -34,7 +34,9 @@ public class DataService {
         return personalInfoRepository.findByLang(lang);
     }
 
-    public List<Skill> getSkills() { return skillsRepository.findByLang(lang); }
+    public List<Skill> getSkills() {
+        return skillsRepository.findByLang(lang);
+    }
 
     public List<Education> getEducations(){
         return educationsRepository.findByLang(lang);

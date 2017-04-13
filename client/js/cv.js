@@ -30,6 +30,12 @@ actualizeLangLinkStyles();
 Hide 'Contacts' block by default
 */
 $("#contacts").hide();
+
+/**
+Hide 'Contacts' block after 3 seconds
+*/
+setTimeout(onContactsClick, 3000);
+
 /******************************************************************************/
 
 /**
@@ -49,7 +55,7 @@ $('a[href = "#pdf"]').tooltip({
 /**
 ShowContacts button handler.
 */
-$('a[href = "#show_contacts"]').click( function(){
+function onContactsClick(){
   if(! $("#contacts").is(':visible') )
     $("body, html").animate({scrollTop: 0}, 200);
   $("#contacts").toggle('blind', 400,  function(){
@@ -61,7 +67,8 @@ $('a[href = "#show_contacts"]').click( function(){
    	 imgElement.attr("src", "images/ContactsOn.png");
     }
   });
-});
+};
+$('a[href = "#show_contacts"]').click(onContactsClick);
 /******************************************************************************/
 
 /**

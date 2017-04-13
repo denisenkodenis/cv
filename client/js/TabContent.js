@@ -51,7 +51,7 @@ experienceBuilder.prototype.build = function() {
        contentType: ContentTypeValue, dataType: "json",
        success: function(data) {
           $.each(data, function(i, item) {
-            $(panel).append(item.duration + "<hr>");
+            $(panel).append("<hr>" + item.duration + "<hr>");
             $.each(item.descriptions, function(j, elem) {
               $(panel).append("<div class='content_header'>"  + elem.name +
                               "</div><div class='content_value'>" + elem.description + "</div>");
@@ -97,7 +97,7 @@ codeBuilder.prototype = Object.create(baseBuilder.prototype);
 codeBuilder.prototype.build = function() {
   $(this.panel).append("Исходный код приложения-резюме: <a href='https://github.com/denisenkodenis/cv' targer='_blank'>https://github.com/denisenkodenis/cv</a>");
   $(this.panel).append("<hr>");
-  $(this.panel).append("Информация для резюме хранится на сервере в MongoDB. Сервер предоставляет ее через REST API [например <a href='http://denisenkodenis.ru:8080/cv/skills' target='_blank'>denisenkodenis.ru:8080/cv/skills</a>], а так же имеет View для печати PDF [Реализовано на Java Spring].");
+  $(this.panel).append("Информация для резюме хранится на сервере в MongoDB. Сервер предоставляет ее через REST API [например <a href='http://denisenkodenis.ru:8080/cv/ru/skills' target='_blank'>denisenkodenis.ru:8080/cv/ru/skills</a>], а так же имеет View для печати PDF [Реализовано на Java Spring].");
   $(this.panel).append("<br>");
   $(this.panel).append("Front end реализован на JQuery UI.");
   $(this.panel).append("<hr>");

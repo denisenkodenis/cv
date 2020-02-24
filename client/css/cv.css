@@ -10,8 +10,8 @@ body {
 
 .block{
 	 min-width: 850px;
-   overflow: auto;
-	 margin: 0 150px 0 150px;
+   	 overflow: auto;
+	 margin: 0 75px 0 75px;
 	 text-align: justify;
 }
 
@@ -23,13 +23,13 @@ body {
 .indent{
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .indent_hor{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .indent_mini{
@@ -151,6 +151,7 @@ a {
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 	border: 3px solid #006699;
+ 	font-size: 9pt;
 }
 
 #birthday{
@@ -190,7 +191,8 @@ a {
 }
 
 #Name{
-	width: 25%;
+	width: 30%;
+ 	font-size: 11pt;
 }
 
 .right_text_align{
